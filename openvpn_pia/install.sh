@@ -75,8 +75,8 @@ echo "supersede domain-name \"127.0.0.1\";" >> /etc/dhcp/dhclient.conf
 
 # Download vpnkillswitch and install as service
 mkdir /usr/vpnkillswitch
-wget -P /usr/vpnkillswitch https://raw.githubusercontent.com/qbwaggle/rpi_scripts/master/openvpn_pia/service.sh
-wget -P /usr/vpnkillswitch https://raw.githubusercontent.com/qbwaggle/rpi_scripts/master/openvpn_pia/run.sh
+wget -P /usr/vpnkillswitch https://raw.githubusercontent.com/qbwaggle/vpnkillswitch/master/ARCHIVE/service.sh
+wget -P /usr/vpnkillswitch https://raw.githubusercontent.com/qbwaggle/vpnkillswitch/master/ARCHIVE/run.sh
 chmod 755 /usr/vpnkillswitch/*.sh
 cp /usr/vpnkillswitch/service.sh /etc/init.d/vpnkillswitch
 update-rc.d vpnkillswitch defaults
